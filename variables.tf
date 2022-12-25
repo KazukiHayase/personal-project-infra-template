@@ -9,4 +9,3 @@ variable "GCP_PROJECT_ID" {
 variable "GCP_PROJECT_REGION" {
   type = string
 }
-
