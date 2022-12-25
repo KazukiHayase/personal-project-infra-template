@@ -6,8 +6,7 @@ variable "region" {
   type = string
 }
 
-variable "server_service_account_roles" {
+variable "hasura_service_account_roles" {
   type    = list(string)
-  default = ["roles/datastore.user"]
+  default = ["roles/secretmanager.secretAccessor"]
 }
-
