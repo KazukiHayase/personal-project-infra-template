@@ -10,8 +10,8 @@ provider "google-beta" {
   region      = var.GCP_PROJECT_REGION
 }
 
-module "core" {
-  source     = "./core"
+module "modules" {
+  source     = "./modules"
   project_id = var.GCP_PROJECT_ID
   region     = var.GCP_PROJECT_REGION
 }
