@@ -40,7 +40,7 @@ create_artifact_registry:
 	gcloud artifacts repositories create $(REGISTRY_NAME) --location=asia-northeast1 --repository-format=docker
 
 # 手動で登録する用のシークレットマネージャーの作成
-# NOTE: NEONでデータベースを作成してURLを手動でシークレットマネージャーに登録する
+# NOTE: Neonでデータベースを作成してURLを手動でシークレットマネージャーに登録する
 .PHONY: create_secret_manager
 create_secret_manager:
 	echo -n "" | gcloud secrets create HASURA_GRAPHQL_DATABASE_URL \
