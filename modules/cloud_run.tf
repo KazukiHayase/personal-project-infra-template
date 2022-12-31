@@ -21,7 +21,7 @@ resource "google_cloud_run_service" "hasura" {
 
         resources {
           limits = {
-            "memory" : "1Gi"
+            "memory" : "512Mi"
             "cpu" = "1000m"
           }
         }
