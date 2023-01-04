@@ -25,6 +25,7 @@ enable_googleapis:
 	gcloud services enable serviceusage.googleapis.com
 	gcloud services enable secretmanager.googleapis.com
 
+# FIXME: 必要最低限の権限にする
 # Terraform用のサービスアカウントを作成
 .PHONY: create_service_account
 create_service_account:
