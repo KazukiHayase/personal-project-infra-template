@@ -33,7 +33,7 @@ create_service_account:
 	gcloud projects add-iam-policy-binding $(GCP_PROJECT_ID) \
 		--member serviceAccount:"terraform@$(GCP_PROJECT_ID).iam.gserviceaccount.com" \
 		--role "roles/owner" \
-		--no-user-output-enable
+		--no-user-output-enabled
 
 # Hasuraのイメージを格納するartifact registryを作成
 .PHONY: create_artifact_registry
